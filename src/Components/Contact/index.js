@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 import ContactForm from './Form';
+import ContactInfo from './Info';
 
 class ContactContainer extends Component {
+
+  handleClick = e => {
+    e.preventDefault();
+  }
+
   render() {
     return(
-      <ContactForm />
+      <div>
+        <ContactForm click={this.handleClick}/>
+        <ContactInfo />
+      </div>
     )
   }
 }
