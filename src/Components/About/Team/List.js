@@ -6,7 +6,11 @@ const TeamList = props => {
   return(
     <div>
       {members.map(member => {
-        return <TeamMember />
+        return (
+          <div key={member.id}>
+            <TeamMember member={member} />
+          </div>
+        )
       })}
     </div>
   )

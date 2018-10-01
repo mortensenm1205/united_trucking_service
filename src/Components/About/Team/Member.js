@@ -1,9 +1,11 @@
 import React from 'react';
 
 const TeamMember = props => {
+  const { member } = props;
   return (
     <div>
-      <p>Im a member</p>
+      <h3>{member.name}</h3>
+      <p>{member.role}</p>
     </div>
   )
 }
