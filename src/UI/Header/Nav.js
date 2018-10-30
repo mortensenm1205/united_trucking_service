@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Header = () => {
+const HeaderNav = () => {
   return(
-    <header>
+    <nav>
       <a href="">Home</a>
       {' '}
       <a href="#about">About</a>
@@ -10,8 +10,8 @@ const Header = () => {
       <a href="#contact">Contact</a>
       {' '}
       <a href="#services">Services</a>
-    </header>
+    </nav>
   )
 }
 
-export default Header;
+export default HeaderNav;
