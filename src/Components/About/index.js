@@ -5,7 +5,8 @@ import AboutTeam from './Team';
 class AboutContainer extends Component {
   render() {
     return(
-      <div>
+      <div id="about">
+        <h1>I am the About Portion</h1>
         <AboutContent />
         <AboutTeam />
       </div>

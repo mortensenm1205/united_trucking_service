@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
 import Header from '../UI/Header';
 import Footer from '../UI/Footer';
+import HomeContainer from '../Components/Home';
 import About from '../Components/About';
 import Contact from '../Components/Contact';
 
 class ScreenRoot extends Component {
   render() {
     return(
-      <div>
+      <HomeContainer>
         <Header />
-        <Switch>
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
+          <About />
+          <Contact />
         <Footer />
-      </div>
+      </HomeContainer>
     )
   }
 }
