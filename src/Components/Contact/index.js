@@ -10,7 +10,8 @@ class ContactContainer extends Component {
 
   render() {
     return(
-      <div>
+      <div id="contact">
+        <h1>I am the Contact Portion</h1>
         <ContactForm click={this.handleClick}/>
         <ContactInfo />
       </div>
