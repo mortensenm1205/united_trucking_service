@@ -9,8 +9,8 @@ class ScreenRoot extends Component {
     return(
       <HomeContainer>
         <About />
-        <Contact />
         <Services />
+        <Contact />
       </HomeContainer>
     )
   }
