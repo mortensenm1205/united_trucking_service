@@ -4,7 +4,7 @@ import ServicesContent from './Content';
 class ServicesContainer extends Component {
     render() {
         return (
-            <div id="services">
+            <div>
                 <h1>I am the Services Portion</h1>
                 <ServicesContent />
             </div>
