@@ -3,9 +3,9 @@ import React from 'react';
 const ContactInfo = props => {
   return(
     <div>
-      <span>For any questions or concerns, Please Feel Free to contact us:</span>
-      <h3>Towing: (908) 224-0060</h3>
-      <h3>Sales/Parts: (908) 361-0376</h3>
+      <h3>Office: (908) 224-0060</h3>
+      <h3>Email: unitedtruck@yahoo.com</h3>
+      <p>Contact United Truck Service in Hillsborough NJ for your heavy duty towing needs. Offering 24 hour towing service in Central NJ | 908-224-0060.</p>
     </div>
   )
 }

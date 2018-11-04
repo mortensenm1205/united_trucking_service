@@ -2,7 +2,11 @@ import React from 'react';
 
 const AboutContent = props => {
   return (
-    <p>At United Truck Service LLC in Central Jersey, NJ, we offer superior heavy towing service. Commercial drivers and Owners rely on United Truck Services heavy duty towing needs. We know that you need to get back on the road quickly, and we aim to get you there again safely.</p>
+    <section>
+      <p>United Truck Service in Central New Jersey, offers heavy duty towing in Hillsborough, Middlesex County, Somerset County, Bridgewater, Far Hills, Manville, Peapack-Gladstone, Raritan and the nearby area. The towing company has over 25 years of experience and has proudly served Central NJ with heavy duty towing, flatbed towing, car roadside assistance, RV towing, and wrecker service. </p>
+      
+      <p>United Truck Service provides you a valuable towing service in Central New Jersey with a crew of experienced certified professionals that stand ready to recover your vehicle and deliver it safely and quickly to your destination. Contact them at (908) 224-0060.</p>
+    </section>
   )
 }
 

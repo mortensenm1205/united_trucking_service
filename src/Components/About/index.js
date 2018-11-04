@@ -6,7 +6,7 @@ class AboutContainer extends Component {
   render() {
     return(
       <div>
-        <h1>I am the About Portion</h1>
+        <h1>“ABOUT” PAGE TITLE</h1>
         <AboutContent />
         <AboutTeam />
       </div>
