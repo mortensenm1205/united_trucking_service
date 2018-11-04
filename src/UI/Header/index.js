@@ -10,7 +10,7 @@ const Header = () => {
         {' '}
         <a href="#contact">Contact</a>
         {' '}
-        <a href="#services">Services</a>
+        <a href="#services">Towing Services</a>
       </nav>
       <figure>
         <img src="" alt="i'm a huge header_image" />
