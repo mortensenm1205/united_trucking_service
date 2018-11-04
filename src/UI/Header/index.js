@@ -1,16 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return(
     <header>
       <nav>
-        <a href="">Home</a>
+        <Link to="/">Home</Link>
         {' '}
-        <a href="#about">About</a>
+        <Link to="/about">About</Link>
         {' '}
-        <a href="#contact">Contact</a>
+        <Link to="/contact">Contact</Link>
         {' '}
-        <a href="#services">Towing Services</a>
+        <Link to="/services">Towing Services</Link>
       </nav>
       <figure>
         <img src="" alt="i'm a huge header_image" />
