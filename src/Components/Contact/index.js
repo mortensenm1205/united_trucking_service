@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ContactForm from './Form';
 import ContactInfo from './Info';
 import RootContainer from '../Root';
+import { addContactData } from './firebase';
 
 class ContactContainer extends Component {
 
@@ -10,8 +11,9 @@ class ContactContainer extends Component {
   }
 
   submit = e => {
+    const { contact_values } = this.state;
     e.preventDefault();
-    console.log(this.state.contact_values);
+    addContactData(contact_values);
   }
 
   values = e => {

@@ -1,0 +1,9 @@
+import { db } from '../../Config/firebase';
+
+export const addContactData = contact_obj => {
+    db.collection('contact_info').add({
+        Name: contact_obj.name || "",
+        Email: contact_obj.email || "",
+        Message: contact_obj.message || ""
+    })
+}
