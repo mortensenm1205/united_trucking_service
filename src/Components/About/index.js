@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import AboutContent from './Content';
 import AboutTeam from './Team';
+import RootContainer from '../Root';
 
 class AboutContainer extends Component {
   render() {
     return(
-      <div>
+      <RootContainer>
         <h1>“ABOUT” PAGE TITLE</h1>
         <AboutContent />
         <AboutTeam />
-      </div>
+      </RootContainer>
     )
   }
 }

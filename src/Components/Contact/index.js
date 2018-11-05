@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ContactForm from './Form';
 import ContactInfo from './Info';
+import RootContainer from '../Root';
 
 class ContactContainer extends Component {
 
@@ -10,11 +11,11 @@ class ContactContainer extends Component {
 
   render() {
     return(
-      <div>
+      <RootContainer>
         <h1>“CONTACT” PAGE TITLE</h1>
         <ContactForm click={this.handleClick}/>
         <ContactInfo />
-      </div>
+      </RootContainer>
     )
   }
 }

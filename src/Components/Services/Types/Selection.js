@@ -4,10 +4,13 @@ import { Link } from 'react-router-dom';
 const TypeSelection = () => {
     return(
         <nav>
-            <Link>HEAVY DUTY TOWING</Link>
-            <Link>CAR TOWING</Link>
-            <Link>ROADSIDE ASSISTANCE</Link>
-            <Link>WRECKER SERVICE</Link>
+            <Link to="/services/heavyDutyTowing">HEAVY DUTY TOWING</Link>
+            {' '}
+            <Link to="/services/carTowing">CAR TOWING</Link>
+            {' '}
+            <Link to="/services/roadsideAssistance">ROADSIDE ASSISTANCE</Link>
+            {' '}
+            <Link to="/services/wreckerService">WRECKER SERVICE</Link>
         </nav>
     )
 }

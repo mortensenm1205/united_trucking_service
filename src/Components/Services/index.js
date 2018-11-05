@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import ServiceTypes from './Types/';
+import RootContainer from '../Root';
 
 class ServicesContainer extends Component {
     render() {
+        const { children } = this.props;
         return (
-            <div>
+            <RootContainer>
                 <h1>I am the Services Portion</h1>
-                <ServiceTypes {...this.props} />
-            </div>
+                {children}
+            </RootContainer>
         )
     }
 }
