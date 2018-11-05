@@ -1,12 +1,11 @@
 import React from 'react';
 
-const ContactForm = props => {
-  const { click } = props;
+const ContactForm = ({ submit, values }) => {
   return(
-    <form onClick={click}>
-      <input type="text" />
-      <input type="text" />
-      <input type="text" />
+    <form onClick={submit}>
+      <input type="text" name="name" placeholder="Name" onChange={values}  />
+      <input type="text" name="email" placeholder="Email" onChange={values} />
+      <input type="text" name="message" placeholder="Message" onChange={values} />
       <button>Contact</button>
     </form>
   )
