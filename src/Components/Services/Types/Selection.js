@@ -1,15 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const TypeSelection = ({ change }) => {
+const TypeSelection = () => {
     return(
-        <div>
-            <select onChange={change}>
-                <option>HEAVY DUTY TOWING</option>
-                <option>CAR TOWING</option>
-                <option>ROADSIDE ASSISTANCE</option>
-                <option>WRECKER SERVICE</option>
-            </select>
-        </div>
+        <nav>
+            <Link>HEAVY DUTY TOWING</Link>
+            <Link>CAR TOWING</Link>
+            <Link>ROADSIDE ASSISTANCE</Link>
+            <Link>WRECKER SERVICE</Link>
+        </nav>
     )
 }
 

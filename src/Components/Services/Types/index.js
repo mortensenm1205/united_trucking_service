@@ -7,6 +7,7 @@ class TypesContainer extends Component {
         const { value } = e.currentTarget;
         const { history } = this.props;
         history.push("/services/" + camelText(value));
+        console.log(this.props)
     }
 
     render() {
@@ -15,7 +16,6 @@ class TypesContainer extends Component {
             <div>
                 <TypeSelection change={this.change} />
                 {children}
-                {console.log(this.props)}
             </div>
         )
     }
