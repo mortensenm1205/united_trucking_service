@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const TypeSelection = () => {
+const TypesNav = () => {
     return(
         <nav>
             <Link to="/services/heavyDutyTowing">HEAVY DUTY TOWING</Link>
@@ -15,4 +15,4 @@ const TypeSelection = () => {
     )
 }
 
-export default TypeSelection;
+export default TypesNav;

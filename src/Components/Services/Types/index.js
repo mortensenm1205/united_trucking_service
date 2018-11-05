@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ServicesContainer from '../index'
-import TypeSelection from './Selection';
+import TypesNav from './Nav';
 
 class TypesContainer extends Component {
 
@@ -8,7 +8,7 @@ class TypesContainer extends Component {
         const { children } = this.props;
         return (
             <ServicesContainer>
-                <TypeSelection />
+                <TypesNav />
                 {children}
             </ServicesContainer>
         )
