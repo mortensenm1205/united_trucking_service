@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import { Switch, Route} from 'react-router-dom';
+import Types from '../Components/Services/Types';
 import HeavyDutyTowing from '../Components/Services/Types/HeavyDutyTowing';
-import Services from '../Components/Services';
+import CarTowing from '../Components/Services/Types/CarTowing';
 
 class ScreenServices extends Component {
     render() {
         return(
             <Switch>
-                <Route path="/services" component={Services} />
-                <Route path="/services/:service" component={HeavyDutyTowing} />
+                <Route exact path="/services" component={Types} />
+                <Route path="/services/heavyDutyTowing" component={HeavyDutyTowing} />
+                <Route path="/services/carTowing" component={CarTowing} />
             </Switch>
         )
     }
