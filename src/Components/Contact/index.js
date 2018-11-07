@@ -7,17 +7,18 @@ import { addContactData } from './firebase';
 class ContactContainer extends Component {
 
   state = {
-    contact_values: {}
+    contact_values: {},
+    success: false
   }
 
   submit = e => {
-    const { contact_values } = this.state;
+    const { contact_values, success } = this.state;
     const { name, email, message } = e.target;
     e.preventDefault();
     name.value = "";
     email.value = "";
     message.value = "";
-    addContactData(contact_values);
+    addContactData(contact_values).then(doc => doc ? this.setState({ success: !success }) : null );
   }
 
   values = e => {
