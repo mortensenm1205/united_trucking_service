@@ -12,7 +12,11 @@ class ContactContainer extends Component {
 
   submit = e => {
     const { contact_values } = this.state;
+    const { name, email, message } = e.target;
     e.preventDefault();
+    name.value = "";
+    email.value = "";
+    message.value = "";
     addContactData(contact_values);
   }
 
