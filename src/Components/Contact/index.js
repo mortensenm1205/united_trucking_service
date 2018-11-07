@@ -29,11 +29,12 @@ class ContactContainer extends Component {
   }
 
   render() {
+    const { success } = this.state;
     return(
       <RootContainer>
         <h1>“CONTACT” PAGE TITLE</h1>
         <ContactForm submit={this.submit} values={this.values} />
-        <ContactSuccess success={this.state.success} />
+        <ContactSuccess success={success} />
         <ContactInfo />
       </RootContainer>
     )
