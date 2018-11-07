@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ContactForm from './Form';
 import ContactInfo from './Info';
+import ContactSuccess from './Success';
 import RootContainer from '../Root';
 import { addContactData } from './firebase';
 
@@ -32,6 +33,7 @@ class ContactContainer extends Component {
       <RootContainer>
         <h1>“CONTACT” PAGE TITLE</h1>
         <ContactForm submit={this.submit} values={this.values} />
+        <ContactSuccess success={this.state.success} />
         <ContactInfo />
       </RootContainer>
     )
