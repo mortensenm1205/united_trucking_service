@@ -14,11 +14,8 @@ class ContactContainer extends Component {
 
   submit = e => {
     const { contact_values, success } = this.state;
-    const { name, email, message } = e.target;
     e.preventDefault();
-    name.value = "";
-    email.value = "";
-    message.value = "";
+    e.target.reset();
     addContactData(contact_values).then(doc => doc ? this.setState({ success: !success }) : null );
   }
 

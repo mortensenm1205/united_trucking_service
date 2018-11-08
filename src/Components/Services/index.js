@@ -6,7 +6,7 @@ class ServicesContainer extends Component {
         const { children } = this.props;
         return (
             <RootContainer>
-                <h1>I am the Services Portion</h1>
+                <h1>"SERVICES" PAGE TITLE</h1>
                 {children}
             </RootContainer>
         )
