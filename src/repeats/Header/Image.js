@@ -1,9 +1,9 @@
 import React from 'react';
 
-const HeaderImage = ({ url }) => {
+const HeaderImage = ({ url, location }) => {
     return (
         <figure>
-            <img src={url} alt="im_the_huge_header_img" />
+            <img src={url} alt={location.pathname === "/" ? "/home" : location.pathname} />
         </figure>
     )
 }

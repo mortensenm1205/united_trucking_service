@@ -6,17 +6,24 @@ import { withRouter } from 'react-router-dom';
 
 class RootContainer extends Component {
 
+  state = {
+    imageURL: ""
+  }
+
   componentDidUpdate(nextProps) {
     if(nextProps.location !== this.props.location) {
-      console.log(this.props.location.pathname);
+      downloadImage(this.props.location.pathname).then(url => (
+        this.setState({ imageURL: url })
+      ))
     };
   }
 
   render() {
-    const { children } = this.props
+    const { location, children } = this.props;
+    const { imageURL } = this.state;
     return (
       <div>
-        <Header />
+        <Header url={imageURL} location={location}/>
           {children}
         <Footer />
       </div>

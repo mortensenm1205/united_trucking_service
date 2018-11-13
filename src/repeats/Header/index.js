@@ -2,11 +2,11 @@ import React from "react";
 import HeaderNav from "./Nav";
 import HeaderImage from "./Image";
 
-const HeaderContainer = () => {
+const HeaderContainer = ({ url, location }) => {
   return (
     <header>
       <HeaderNav />
-      <HeaderImage />
+      <HeaderImage url={url} location={location} />
     </header>
   );
 };
