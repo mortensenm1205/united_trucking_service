@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ContactForm from "./Form";
 import ContactInfo from "./Info";
 import ContactSuccess from "./Success";
-import RootContainer from "../Root";
 import { addContactData } from "./firebase/";
 
 class ContactContainer extends Component {
@@ -29,12 +28,12 @@ class ContactContainer extends Component {
   render() {
     const { success } = this.state;
     return (
-      <RootContainer>
+      <div>
         <h1>“CONTACT” PAGE TITLE</h1>
         <ContactForm submit={this.submit} values={this.values} />
         <ContactSuccess success={success} />
         <ContactInfo />
-      </RootContainer>
+      </div>
     );
   }
 }
