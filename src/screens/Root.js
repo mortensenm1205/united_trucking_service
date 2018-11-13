@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import Header from "../UI/Header";
-import Footer from "../UI/Footer";
+import Header from "../repeats/Header";
+import Footer from "../repeats/Footer";
 import Home from "../components/Home";
 import About from "../components/About";
 import Contact from "../components/Contact";
