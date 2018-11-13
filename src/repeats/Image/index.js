@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Image from './Image';
+import Image from './Img';
 
 class ImageContainer extends Component {
     render() {

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import Header from "../repeats/Header";
-import Footer from "../repeats/Footer";
+import RootContainer from '../components/Root';
 import Home from "../components/Home";
 import About from "../components/About";
 import Contact from "../components/Contact";
@@ -10,16 +9,14 @@ import Services from "./Services";
 class ScreenRoot extends Component {
   render() {
     return (
-      <div>
-        <Header />
+      <RootContainer>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/contact" component={Contact} />
           <Route path="/about" component={About} />
           <Services />
         </Switch>
-        <Footer />
-      </div>
+      </RootContainer>
     );
   }
 }
