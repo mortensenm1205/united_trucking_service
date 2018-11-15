@@ -1,15 +1,34 @@
-import React from "react";
-import Header from '../../UI/Header';
-import Footer from '../../UI/Footer';
+import React, { Component } from "react";
+import { downloadImage } from '../../repeats/Image';
+import Header from "../../repeats/Header";
+import Footer from "../../repeats/Footer";
+import { withRouter } from 'react-router-dom';
 
-const RootContainer = ({ children }) => {
+class RootContainer extends Component {
+
+  state = {
+    imageURL: ""
+  }
+
+  componentDidUpdate(nextProps) {
+    if(nextProps.location !== this.props.location) {
+      downloadImage(this.props.location.pathname).then(url => (
+        this.setState({ imageURL: url })
+      ))
+    };
+  }
+
+  render() {
+    const { location, children } = this.props;
+    const { imageURL } = this.state;
     return (
-        <div>
-            <Header />
-             {children}
-            <Footer />
-        </div>
+      <div>
+        <Header url={imageURL} location={location}/>
+          {children}
+        <Footer />
+      </div>
     )
-}
+  }
+};
 
-export default RootContainer;
+export default withRouter(RootContainer);
