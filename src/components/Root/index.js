@@ -10,8 +10,14 @@ class RootContainer extends Component {
     imageURL: ""
   }
 
+  componentDidMount() {
+    downloadImage(this.props.location.pathname).then(url => (
+      this.setState({ imageURL: url })
+    ))
+  }
+
   componentDidUpdate(nextProps) {
-    if(nextProps.location !== this.props.location) {
+    if (nextProps.location !== this.props.location) {
       downloadImage(this.props.location.pathname).then(url => (
         this.setState({ imageURL: url })
       ))
@@ -23,8 +29,8 @@ class RootContainer extends Component {
     const { imageURL } = this.state;
     return (
       <div>
-        <Header url={imageURL} location={location}/>
-          {children}
+        <Header url={imageURL} location={location} />
+        {children}
         <Footer />
       </div>
     )
