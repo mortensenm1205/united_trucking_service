@@ -1,0 +1,36 @@
+/******************
+====================
+    Header (index.js)
+====================
+******************/
+
+.header_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 700px;
+}
+
+/******************
+====================
+    HeaderInfo
+====================
+******************/
+
+.header_info_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/******************
+====================
+    HeaderNav
+====================
+******************/
+
+/******************
+====================
+    HeaderImage
+====================
+******************/

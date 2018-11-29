@@ -4,7 +4,7 @@ import AboutTeam from './Team';
 
 class AboutContainer extends Component {
   render() {
-    return(
+    return (
       <div>
         <h1>“ABOUT” PAGE TITLE</h1>
         <AboutContent />
