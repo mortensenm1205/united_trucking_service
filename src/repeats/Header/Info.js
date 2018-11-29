@@ -1,9 +1,9 @@
 import React from 'react';
-import './header.css';
+import { HeaderInfoContain } from './header_css';
 
 const HeaderInfo = () => {
     return (
-        <div className="header_info_container">
+        <HeaderInfoContain>
             <div className="header_infoLeft">
                 <div className="sales">SALES, PARTS & SANDBLASTING</div>
                 <div className="phoneNumber">(908) 361-0376</div>
@@ -13,7 +13,7 @@ const HeaderInfo = () => {
                 <div className="towing">TOWING</div>
                 <div className="phoneNumber">(908) 224-0060</div>
             </div>
-        </div>
+        </HeaderInfoContain>
     );
 }
 
