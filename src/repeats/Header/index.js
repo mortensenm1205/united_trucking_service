@@ -1,16 +1,16 @@
 import React from "react";
-import { HeaderContain } from './header_css';
+import { Header } from './header_css';
 import HeaderInfo from './Info';
 import HeaderNav from "./Nav";
 import HeaderImage from "./Image";
 
 const HeaderContainer = ({ url, location }) => {
   return (
-    <HeaderContain>
+    <Header>
       <HeaderInfo />
       <HeaderNav />
       <HeaderImage url={url} location={location} />
-    </HeaderContain>
+    </Header>
   );
 };
 

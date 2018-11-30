@@ -1,10 +1,11 @@
 import React from 'react';
+import { HeadImageContainer } from './header_css';
 
 const HeaderImage = ({ url, location }) => {
     return (
-        <figure>
+        <HeadImageContainer>
             <img src={url} alt={location.pathname === "/" ? "/home" : location.pathname} />
-        </figure>
+        </HeadImageContainer>
     )
 }
 
