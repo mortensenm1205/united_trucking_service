@@ -22,16 +22,19 @@ export const Header = styled.div`
 export const HeadInfoContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
+    min-height: 35vh;
 `;
 
-export const HeadInfoLeft = styled.div`
+export const HeadInfoContent = styled.div`
     text-align: center;
 `;
 
-export const HeadInfoRight = styled.div`
-    text-align: center;
+export const HeadInfoLeft = styled(HeadInfoContent)`
+`;
+
+export const HeadInfoRight = styled(HeadInfoContent)`
+    border: 2px solid red;
 `;
 
 /******************
@@ -72,10 +75,12 @@ export const HeadImageContainer = styled.figure`
     overflow: hidden;
 
     img {
-        width: 70%
+        width: 100%
     }
 `;
 
 export const HeadInfoImageContainer = styled(HeadImageContainer)`
     max-height: 75px;
+    margin: 0;
+    flex-grow: 4;
 `;
