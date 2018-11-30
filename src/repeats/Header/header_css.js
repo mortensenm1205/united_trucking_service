@@ -6,11 +6,11 @@ import styled from 'styled-components';
 ====================
 ******************/
 
-export const HeaderContain = styled.div`
+export const Header = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    min-height: 700px;
+    justify-content: space-between;
+    min-height: 500px;
 `;
 
 /******************
@@ -19,7 +19,7 @@ export const HeaderContain = styled.div`
 ====================
 ******************/
 
-export const HeaderInfoContain = styled.div`
+export const HeadInfoContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,8 +31,18 @@ export const HeaderInfoContain = styled.div`
 ====================
 ******************/
 
+export const 
+
 /******************
 ====================
     HeaderImage
 ====================
 ******************/
+
+export const HeadImageContainer = styled.figure`
+    width: 40%;
+
+    img {
+        width: 100%;
+    }
+`;
