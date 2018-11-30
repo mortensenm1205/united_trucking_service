@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from "react-router-dom";
 
 /******************
 ====================
@@ -9,8 +10,7 @@ import styled from 'styled-components';
 export const Header = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 500px;
+    justify-content: flex-start;
 `;
 
 /******************
@@ -22,7 +22,7 @@ export const Header = styled.div`
 export const HeadInfoContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 `
 
 /******************
@@ -31,7 +31,19 @@ export const HeadInfoContainer = styled.div`
 ====================
 ******************/
 
-export const 
+export const HeadNavContainer = styled.nav`
+    background-color: #a11e35;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+`;
+
+export const NavItem = styled(NavLink)`
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 3%;
+`
 
 /******************
 ====================
@@ -40,9 +52,14 @@ export const
 ******************/
 
 export const HeadImageContainer = styled.figure`
-    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-height: 250px;
+    overflow: hidden;
 
     img {
-        width: 100%;
+        width: 70%
     }
 `;
