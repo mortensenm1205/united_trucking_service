@@ -22,8 +22,17 @@ export const Header = styled.div`
 export const HeadInfoContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-`
+    justify-content: space-around;
+    align-items: flex-end;
+`;
+
+export const HeadInfoLeft = styled.div`
+    text-align: center;
+`;
+
+export const HeadInfoRight = styled.div`
+    text-align: center;
+`;
 
 /******************
 ====================
@@ -36,18 +45,21 @@ export const HeadNavContainer = styled.nav`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 0.8% 0;
 `;
 
 export const NavItem = styled(NavLink)`
-    color: black;
+    color: white;
     text-decoration: none;
     cursor: pointer;
     margin: 0 3%;
-`
+    font-size: 1.3rem;
+    font-family: Lato;
+`;
 
 /******************
 ====================
-    HeaderImage
+    HeaderImages
 ====================
 ******************/
 
@@ -62,4 +74,8 @@ export const HeadImageContainer = styled.figure`
     img {
         width: 70%
     }
+`;
+
+export const HeadInfoImageContainer = styled(HeadImageContainer)`
+    max-height: 75px;
 `;
