@@ -22,19 +22,18 @@ export const Header = styled.div`
 export const HeadInfoContainer = styled.div`
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     min-height: 35vh;
 `;
 
 export const HeadInfoContent = styled.div`
     text-align: center;
-`;
 
-export const HeadInfoLeft = styled(HeadInfoContent)`
-`;
-
-export const HeadInfoRight = styled(HeadInfoContent)`
-    border: 2px solid red;
+    h3 {
+        color: #a51c36;
+        font-size: 1.6rem;
+    }
 `;
 
 /******************
@@ -57,7 +56,6 @@ export const NavItem = styled(NavLink)`
     cursor: pointer;
     margin: 0 3%;
     font-size: 1.3rem;
-    font-family: Lato;
 `;
 
 /******************
@@ -71,7 +69,7 @@ export const HeadImageContainer = styled.figure`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-height: 250px;
+    max-height: 350px;
     overflow: hidden;
 
     img {
@@ -82,5 +80,8 @@ export const HeadImageContainer = styled.figure`
 export const HeadInfoImageContainer = styled(HeadImageContainer)`
     max-height: 75px;
     margin: 0;
-    flex-grow: 4;
+
+    img {
+        width: 75%;
+    }
 `;
