@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { RootContain } from './root_css';
 import { downloadImage } from '../../repeats/Image';
 import Header from "../../repeats/Header";
 import Footer from "../../repeats/Footer";
@@ -28,11 +29,11 @@ class RootContainer extends Component {
     const { location, children } = this.props;
     const { imageURL } = this.state;
     return (
-      <div>
+      <RootContain>
         <Header url={imageURL} location={location} />
         {children}
         <Footer />
-      </div>
+      </RootContain>
     )
   }
 };
