@@ -7,19 +7,18 @@ import styled from 'styled-components';
 ******************/
 
 export const RootContain = styled.div`
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: Lato;
     
-    /******
-    ========= 
-     BASESTYLES
-    =========
-    ******/
+    // This is for props.children.
+    // These are just base style updates. 
+    & > div {
+        min-height: 100vh;
+    }
 
-    h3,
-    p {
+    h3, p {
         margin: 0;
+        padding: 0;
     }
 `;

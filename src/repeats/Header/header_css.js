@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 ====================
 ******************/
 
-export const Header = styled.div`
+export const Header = styled.header`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
