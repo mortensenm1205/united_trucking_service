@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Footer } from './footer_css';
+import FooterCopyright from './Copyright';
 
-const Footer = props => {
-  return (
-    <p>&copy;2017 by United Truck Service. Proudly created by ImagineTech</p>
-  )
+class FooterContainer extends Component {
+  render() {
+    return (
+      <Footer>
+        <FooterCopyright />
+      </Footer>
+    )
+  }
 }
 
-export default Footer;
+export default FooterContainer;
