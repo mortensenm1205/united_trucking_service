@@ -1,13 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HeadNavContainer, NavItem } from './header_css';
 
 const HeaderNav = () => {
   return (
-    <nav>
-      <Link to="/">Home</Link> <Link to="/about">About</Link>{" "}
-      <Link to="/contact">Contact</Link>{" "}
-      <Link to="/services">Towing Services</Link>
-    </nav>
+    <HeadNavContainer>
+      <NavItem to="/">Home</NavItem>
+      <NavItem to="/about">About</NavItem>
+      <NavItem to="/contact">Contact</NavItem>
+      <NavItem to="/services">Towing Services</NavItem>
+    </HeadNavContainer>
   );
 };
 
