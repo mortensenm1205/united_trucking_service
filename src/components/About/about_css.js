@@ -15,4 +15,11 @@ export const AboutImg = styled.img.attrs(props => ({
     left: 0;
     width: 100 %;
     height: auto;
-`
+`;
+
+export const AboutCont = styled.div`
+    width: 40%;
+    float: right;
+    margin: 0 0 0 3%;
+    line-height: 2;
+`;

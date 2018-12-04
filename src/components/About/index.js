@@ -20,7 +20,7 @@ class AboutContainer extends Component {
     const { aboutImageURL } = this.state;
     return (
       <div>
-        <h1>“ABOUT” PAGE TITLE</h1>
+        <h1>About Us</h1>
         <AboutContent />
         <AboutImage url={aboutImageURL} location={location} />
       </div>
