@@ -17,6 +17,8 @@ export const RootContain = styled.div`
         h1 {
             font-size: 2.6rem;
             text-align: center;
+            color: #a11e35;
+            margin: 5% 0;
         }
     }
 `;
