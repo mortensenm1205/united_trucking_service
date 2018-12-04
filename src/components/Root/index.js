@@ -12,9 +12,15 @@ class RootContainer extends Component {
   }
 
   componentDidMount() {
-    downloadHeadImage(this.props.location.pathname).then(url => (
-      this.setState({ headImageURL: url })
-    ))
+    if (this.props.location.pathname === "/services") {
+      downloadHeadImage(this.props.location.pathname).then(url => (
+        this.setState({ servicesImageURL: url })
+      ))
+    } else {
+      downloadHeadImage("/services").then(url => (
+        this.setState({ headImageURL: url })
+      ))
+    }
   }
 
   componentDidUpdate(nextProps) {
