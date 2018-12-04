@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { ServicesContentWrapper } from './services_css';
 import { downloadImage } from '../../repeats/Image';
+import ServicesContent from './Content';
 import ServicesImage from './Image';
 import TypesNav from './Types/Nav';
 import { withRouter } from 'react-router-dom';
@@ -26,9 +28,12 @@ class ServicesContainer extends Component {
         const { servicesImageURL } = this.state;
         return (
             <div>
-                <h1>"SERVICES" PAGE TITLE</h1>
-                <TypesNav />
-                {children}
+                <h1>Services</h1>
+                <ServicesContentWrapper>
+                    <ServicesContent />
+                    <TypesNav />
+                    {children}
+                </ServicesContentWrapper>
                 <ServicesImage url={servicesImageURL} location={location} />
             </div>
         )
