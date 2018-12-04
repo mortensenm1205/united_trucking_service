@@ -40,11 +40,11 @@ class ContactContainer extends Component {
     const { success, contactImageURL } = this.state;
     return (
       <div>
-        <h1>“CONTACT” PAGE TITLE</h1>
+        <h1>Contact Us</h1>
         <ContactForm submit={this.submit} values={this.values} />
         <ContactSuccess success={success} />
-        <ContactInfo />
         <ContactImage url={contactImageURL} location={location} />
+        <ContactInfo />
       </div>
     );
   }
