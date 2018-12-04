@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AboutContent from './Content';
-import AboutTeam from './Team';
+import AboutImage from './Image';
 
 class AboutContainer extends Component {
   render() {
@@ -8,7 +8,7 @@ class AboutContainer extends Component {
       <div>
         <h1>“ABOUT” PAGE TITLE</h1>
         <AboutContent />
-        <AboutTeam />
+        <AboutImage />
       </div>
     )
   }
