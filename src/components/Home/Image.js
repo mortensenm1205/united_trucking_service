@@ -1,10 +1,11 @@
 import React from 'react';
+import { HomeImageContainer, HomeImg } from './home_css';
 
 const HomeImage = ({ url, location }) => {
     return (
-        <figure>
-            <img src={url} alt={location.pathname} />
-        </figure>
+        <HomeImageContainer>
+            <HomeImg src={url} location={location} />
+        </HomeImageContainer>
     )
 }
 
