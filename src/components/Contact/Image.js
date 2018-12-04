@@ -1,10 +1,11 @@
 import React from 'react';
+import { ContactImageContainer, ContactImg } from './contact_css';
 
 const ContactImage = ({ url, location }) => {
     return (
-        <figure>
-            <img src={url} alt={location} />
-        </figure>
+        <ContactImageContainer>
+            <ContactImg src={url} location={location} />
+        </ContactImageContainer>
     )
 }
 

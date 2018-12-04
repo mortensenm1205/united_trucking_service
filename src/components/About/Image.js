@@ -1,10 +1,11 @@
 import React from 'react';
+import { AboutImageContainer, AboutImg } from './about_css';
 
 const AboutImage = ({ url, location }) => {
     return (
-        <figure>
-            <img src={url} alt={location} />
-        </figure>
+        <AboutImageContainer>
+            <AboutImg src={url} location={location} />
+        </AboutImageContainer>
     )
 }
 
