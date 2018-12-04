@@ -1,5 +1,6 @@
-import { downloadImage } from "./firebase";
+import { downloadHeadImage, downloadImage } from "./firebase";
 
-export { 
+export {
+    downloadHeadImage,
     downloadImage
 };

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { RootContain } from './root_css';
-import { downloadImage } from '../../repeats/Image';
+import { downloadHeadImage } from '../../repeats/Image';
 import Header from "../../repeats/Header";
 import Footer from "../../repeats/Footer";
 import { withRouter } from 'react-router-dom';
@@ -8,29 +8,29 @@ import { withRouter } from 'react-router-dom';
 class RootContainer extends Component {
 
   state = {
-    imageURL: ""
+    headImageURL: ""
   }
 
   componentDidMount() {
-    downloadImage(this.props.location.pathname).then(url => (
-      this.setState({ imageURL: url })
+    downloadHeadImage(this.props.location.pathname).then(url => (
+      this.setState({ headImageURL: url })
     ))
   }
 
   componentDidUpdate(nextProps) {
     if (nextProps.location !== this.props.location) {
-      downloadImage(this.props.location.pathname).then(url => (
-        this.setState({ imageURL: url })
+      downloadHeadImage(this.props.location.pathname).then(url => (
+        this.setState({ headImageURL: url })
       ))
     };
   }
 
   render() {
     const { location, children } = this.props;
-    const { imageURL } = this.state;
+    const { headImageURL } = this.state;
     return (
       <RootContain>
-        <Header url={imageURL} location={location} />
+        <Header url={headImageURL} location={location} />
         {children}
         <Footer />
       </RootContain>
