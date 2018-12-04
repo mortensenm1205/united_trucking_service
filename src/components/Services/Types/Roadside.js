@@ -1,9 +1,8 @@
 import React from 'react';
-import TypesContainer from './index';
 
 const RoadsideAssistance = props => {
     return (
-        <TypesContainer>
+        <div>
             <p>United Truck Service offers 24 hour roadside assistance in Hillsborough, Middlesex County, Somerset County, Bridgewater, Far Hills, Manville, Peapack-Gladstone, Raritan and the Central New Jersey area.</p>
             <p>Roadside assistance includes:</p>
             <ul>
@@ -13,7 +12,7 @@ const RoadsideAssistance = props => {
                 <li>Lockout Service</li>
             </ul>
             <p>Contact United Truck Service at (908) 224-0060.</p>
-        </TypesContainer>
+        </div>
     )
 }
 
