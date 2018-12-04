@@ -7,7 +7,7 @@ import HeaderImage from "./Image";
 const HeaderContainer = ({ url, location }) => {
   return (
     <Header>
-      <HeaderInfo />
+      {/* <HeaderInfo /> */}
       <HeaderNav />
       <HeaderImage url={url} location={location} />
     </Header>

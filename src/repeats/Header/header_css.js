@@ -34,15 +34,20 @@ export const HeadInfoContainer = styled.div`
 
 export const HeadNavContainer = styled.nav`
     background-color: #a11e35;
-    padding: 0.8% 0;
+    padding: 1.2% 0;
     text-align: center;
 `;
 
-export const NavItem = styled(NavLink)`
+export const NavItem = styled(NavLink).attrs({
+    activeStyle: {
+        borderBottom: "2px solid #fff"
+    }
+})`
     color: white;
     text-decoration: none;
     cursor: pointer;
     margin: 0 3%;
+    padding: 0 0 0.5% 0;
     font-size: 1.3rem;
 `;
 
