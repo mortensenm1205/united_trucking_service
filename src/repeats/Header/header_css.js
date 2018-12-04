@@ -8,9 +8,6 @@ import { NavLink } from "react-router-dom";
 ******************/
 
 export const Header = styled.header`
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 `;
 
 /******************
@@ -20,20 +17,7 @@ export const Header = styled.header`
 ******************/
 
 export const HeadInfoContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 35vh;
-`;
-
-export const HeadInfoContent = styled.div`
-    text-align: center;
-
-    h3 {
-        color: #a51c36;
-        font-size: 1.6rem;
-    }
+    min-height: 40vh;
 `;
 
 /******************
@@ -44,10 +28,8 @@ export const HeadInfoContent = styled.div`
 
 export const HeadNavContainer = styled.nav`
     background-color: #a11e35;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     padding: 0.8% 0;
+    text-align: center;
 `;
 
 export const NavItem = styled(NavLink)`
@@ -65,23 +47,18 @@ export const NavItem = styled(NavLink)`
 ******************/
 
 export const HeadImageContainer = styled.figure`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    max-height: 350px;
-    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+`;
 
-    img {
-        width: 100%
-    }
+export const HeadImage = styled.img.attrs({
+    alt: props => props.location.pathname === "/" ? "/home" : props.location.pathname
+})`
+    background-image: url(${props => props.src})
 `;
 
 export const HeadInfoImageContainer = styled(HeadImageContainer)`
-    max-height: 75px;
-    margin: 0;
-
     img {
-        width: 75%;
+        width: 35%;
     }
-`;
+`; 
