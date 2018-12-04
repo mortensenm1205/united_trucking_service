@@ -2,6 +2,16 @@ import styled from 'styled-components';
 
 /******************
 ====================
+    Contact (index.js)
+====================
+******************/
+
+export const Contact = styled.div`
+    position: relative;
+`;
+
+/******************
+====================
     ContactImages
 ====================
 ******************/
@@ -19,7 +29,7 @@ export const ContactImg = styled.img.attrs(props => ({
     position: absolute;
     top: 0;
     left: 0;
-    width: 100 %;
+    width: 100%;
     height: auto;
 `
 
@@ -30,7 +40,11 @@ export const ContactImg = styled.img.attrs(props => ({
 ******************/
 
 export const Success = styled.div`
-    float: left;
+    position: absolute;
+    bottom: 12%;
+    left: 0;
+    width: 40%;
+    font-size: 2rem;
 `;
 
 
@@ -72,4 +86,14 @@ export const Button = styled.button`
         background-color: #a11e35;
         color: #fff;
     }
+`;
+
+/******************
+====================
+    ContactInfo
+====================
+******************/
+
+export const Info = styled.div`
+    margin: 0 0 5% 0;
 `;

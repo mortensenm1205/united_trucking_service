@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Contact } from "./contact_css";
 import ContactForm from "./Form";
 import ContactInfo from "./Info";
 import ContactSuccess from "./Success";
@@ -39,13 +40,13 @@ class ContactContainer extends Component {
     const { location } = this.props;
     const { success, contactImageURL } = this.state;
     return (
-      <div>
+      <Contact>
         <h1>Contact Us</h1>
+        <ContactInfo />
         <ContactForm submit={this.submit} values={this.values} />
         <ContactSuccess success={success} />
         <ContactImage url={contactImageURL} location={location} />
-        <ContactInfo />
-      </div>
+      </Contact>
     );
   }
 }
