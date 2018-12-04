@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 export const ServicesContentWrapper = styled.section`
     float: left;
     width: 40%;
-    line-height: 1.6;
+    line-height: 1.4;
     margin: 0 3% 0 0;
 `;
 
@@ -21,7 +21,7 @@ export const ServicesImg = styled.img.attrs(props => ({
     position: absolute;
     top: 0;
     left: 0;
-    width: 100 %;
+    width: 100%;
     height: auto;
 `
 

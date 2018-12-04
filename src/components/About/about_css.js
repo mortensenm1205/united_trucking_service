@@ -13,7 +13,7 @@ export const AboutImg = styled.img.attrs(props => ({
     position: absolute;
     top: 0;
     left: 0;
-    width: 100 %;
+    width: 100%;
     height: auto;
 `;
 
