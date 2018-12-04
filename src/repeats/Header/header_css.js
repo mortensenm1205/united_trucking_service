@@ -13,6 +13,7 @@ export const Header = styled.header`
 export const HeadImageContainer = styled.figure`
     margin: 0 auto;
     text-align: center;
+    overflow: hidden;
 `;
 
 /******************
@@ -51,10 +52,15 @@ export const NavItem = styled(NavLink)`
 ====================
 ******************/
 
-export const HeadImage = styled.img.attrs({
-    alt: props => props.location.pathname === "/" ? "/home" : props.location.pathname
-})`
-    background-image: url(${props => props.src})
+export const HeadImage = styled.img.attrs(props => ({
+    alt: props.location.pathname === "/" ? "/home" : props.location.pathname
+}))`
+    background-image: url(${props => props.src});
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
 `;
 
 export const HeadInfoImage = styled.img.attrs({
