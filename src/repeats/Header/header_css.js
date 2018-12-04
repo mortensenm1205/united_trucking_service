@@ -10,6 +10,11 @@ import { NavLink } from "react-router-dom";
 export const Header = styled.header`
 `;
 
+export const HeadImageContainer = styled.figure`
+    margin: 0 auto;
+    text-align: center;
+`;
+
 /******************
 ====================
     HeaderInfo
@@ -46,19 +51,15 @@ export const NavItem = styled(NavLink)`
 ====================
 ******************/
 
-export const HeadImageContainer = styled.figure`
-    margin: 0 auto;
-    text-align: center;
-`;
-
 export const HeadImage = styled.img.attrs({
     alt: props => props.location.pathname === "/" ? "/home" : props.location.pathname
 })`
     background-image: url(${props => props.src})
 `;
 
-export const HeadInfoImageContainer = styled(HeadImageContainer)`
-    img {
-        width: 35%;
-    }
+export const HeadInfoImage = styled.img.attrs({
+    alt: "United Truck Service Logo"
+})`
+    background-image: url(${props => props.src});
+    width: 35%;
 `; 
