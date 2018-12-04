@@ -2,13 +2,23 @@ import React, { Component } from "react";
 import ContactForm from "./Form";
 import ContactInfo from "./Info";
 import ContactSuccess from "./Success";
+import ContactImage from "./Image";
 import { addContactData } from "./firebase/";
+import { downloadImage } from "../../repeats/Image";
 
 class ContactContainer extends Component {
   state = {
     contact_values: {},
-    success: false
+    success: false,
+    contactImageURL: ""
   };
+
+  componentDidMount() {
+    downloadImage(this.props.location.pathname).then(url => (
+      this.setState({ contactImageURL: url })
+    ))
+  }
+
 
   submit = e => {
     const { contact_values, success } = this.state;
@@ -26,13 +36,15 @@ class ContactContainer extends Component {
   };
 
   render() {
-    const { success } = this.state;
+    const { location } = this.props;
+    const { success, contactImageURL } = this.state;
     return (
       <div>
         <h1>“CONTACT” PAGE TITLE</h1>
         <ContactForm submit={this.submit} values={this.values} />
         <ContactSuccess success={success} />
         <ContactInfo />
+        <ContactImage url={contactImageURL} location={location} />
       </div>
     );
   }
