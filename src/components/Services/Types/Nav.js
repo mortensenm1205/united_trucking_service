@@ -1,17 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { TypesNavigation, TypesLink } from '../services_css';
 
 const TypesNav = () => {
-    return(
-        <nav>
-            <Link to="/services/heavyDutyTowing">HEAVY DUTY TOWING</Link>
-            {' '}
-            <Link to="/services/carTowing">CAR TOWING</Link>
-            {' '}
-            <Link to="/services/roadsideAssistance">ROADSIDE ASSISTANCE</Link>
-            {' '}
-            <Link to="/services/wreckerService">WRECKER SERVICE</Link>
-        </nav>
+    return (
+        <TypesNavigation>
+            <TypesLink exact={true} to="/services/heavyDutyTowing">HEAVY DUTY TOWING</TypesLink>
+            <TypesLink to="/services/carTowing">CAR TOWING</TypesLink>
+            <TypesLink to="/services/roadsideAssistance">ROADSIDE ASSISTANCE</TypesLink>
+            <TypesLink to="/services/wreckerService">WRECKER SERVICE</TypesLink>
+        </TypesNavigation>
     )
 }
 
