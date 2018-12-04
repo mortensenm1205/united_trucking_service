@@ -1,10 +1,11 @@
 import React from 'react';
+import { Success } from './contact_css';
 
 const ContactSuccess = ({ success }) => {
     return (
-        <div>
+        <Success>
             {success ? <h3>Message Sent! Someone will be in touch soon :)</h3> : null}
-        </div>
+        </Success>
     )
 }
 
