@@ -39,26 +39,38 @@ export const ServicesImg = styled.img.attrs(props => ({
 `
 
 export const TypesNavigation = styled.nav`
+    text-align: center;
+
+    .types-nav-active {
+        font-style: italic;
+        background-color: #a11e35;
+        color: #fff;
+
+        @media (min-width: 850px) {
+            background-color: #fff;
+            color: #a11e35;
+        }
+    }
 `;
 
-export const TypesLink = styled(NavLink).attrs({
-    activeStyle: {
-        fontStyle: "italic",
-    }
-})`
+export const TypesLink = styled(NavLink)`
     display: block;
-    width: 20%;
-    margin: 2% 0;
-    vertical-align: top;
+    width: 100%;
+    margin: 2% auto;
+    padding: 3%;
+    border: 3px solid #a11e35;
+    border-radius: 13px;
+    background-color: #fff;
+    color: #a11e35;
     text-decoration: none;
-    color: #000;
-    
-    :hover {
-        cusor: pointer;
-    }
+    box-sizing: border-box;
     
     @media (min-width: 850px) {
         display: inline-block;
+        width: 20%;
+        border: none;
         margin: 0 2%;
+        color: #000;
+
     }
 `;
