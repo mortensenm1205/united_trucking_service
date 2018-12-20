@@ -52,7 +52,7 @@ export const Success = styled.div`
         width: 40%;
         font-size: 2rem;
         position: absolute;
-        bottom: 12%;
+        bottom: -6%;
         left: 0;
     }
 `;
@@ -92,6 +92,7 @@ export const Button = styled.button`
     color: #a11e35;
     padding: 3.3%;
     font-size: 1.3rem;
+    width: 100%; 
 
     :hover {
         cursor: pointer;
@@ -99,6 +100,11 @@ export const Button = styled.button`
         background-color: #a11e35;
         color: #fff;
     }
+
+    @media (min-width: 850px) {
+        width: auto;
+    }
+
 `;
 
 /******************
@@ -110,4 +116,8 @@ export const Button = styled.button`
 export const Info = styled.div`
     margin: 0 0 5% 0;
     line-height: 1.6;
+
+    &&& {
+        min-height: auto;
+    }
 `;
