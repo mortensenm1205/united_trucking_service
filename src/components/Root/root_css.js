@@ -8,7 +8,6 @@ import styled from 'styled-components';
 
 export const RootContain = styled.div`
     font-family: Lato;
-    max-width: 1200px;
     margin: 0 auto;
     
     & > div {

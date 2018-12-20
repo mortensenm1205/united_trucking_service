@@ -1,5 +1,14 @@
 import styled from 'styled-components';
 
+export const Home = styled.div`
+    max-width: 350px;
+    margin: 0 auto;
+
+    @media (min-width: 850px) {
+        max-width: 1200px;
+    }
+`;
+
 export const HomeImageContainer = styled.figure`
     position: relative;
     padding-top: 56.25%;
