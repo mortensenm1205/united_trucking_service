@@ -2,10 +2,13 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const ServicesContentWrapper = styled.section`
-    float: left;
-    width: 40%;
-    line-height: 1.4;
-    margin: 0 3% 0 0;
+    
+    @media (min-width: 850px) {
+        float: left;
+        width: 40%;
+        line-height: 1.4;
+        margin: 0 3% 0 0;
+    }
 `;
 
 export const ServicesImageContainer = styled.figure`
