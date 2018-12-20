@@ -34,25 +34,38 @@ export const HeadInfoContainer = styled.div`
 
 export const HeadNavContainer = styled.nav`
     background-color: #a11e35;
-    padding: 1.2% 0;
     text-align: center;
+
+    /* 
+        Had to remove attrs from NavItem so that 
+        we may apply media queries to the acitve style
+    */
+    .nav-border {
+        border: 2px solid #fff;
+
+        @media (min-width: 850px) {
+            border: none;
+            border-bottom: 2px solid #fff;
+        }
+    }
+
+    @media (min-width: 850px) {
+        padding: 1.2% 0;
+    }
 `;
 
-export const NavItem = styled(NavLink).attrs({
-    activeStyle: {
-        borderBottom: "2px solid #fff"
-    }
-})`
+export const NavItem = styled(NavLink)`
     color: white;
     text-decoration: none;
     cursor: pointer;
-    margin: 0 3%;
-    padding: 0 0 0.5% 0;
+    padding: 4% 0;
     font-size: 1.3rem;
     display: block;
 
     @media (min-width: 850px) {
         display: inline-block;
+        padding: 0 0 0.5% 0;
+        margin: 0 3%;
     }
 `;
 

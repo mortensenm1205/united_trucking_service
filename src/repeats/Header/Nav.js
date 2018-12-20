@@ -4,10 +4,11 @@ import { HeadNavContainer, NavItem } from './header_css';
 const HeaderNav = () => {
   return (
     <HeadNavContainer>
-      <NavItem exact={true} to="/">Home</NavItem>
-      <NavItem to="/about">About</NavItem>
-      <NavItem to="/contact">Contact</NavItem>
-      <NavItem to="/services">Towing Services</NavItem>
+      {/* Using activeClassName now so that we may use media queries */}
+      <NavItem exact={true} to="/" activeClassName="nav-border">Home</NavItem>
+      <NavItem to="/about" activeClassName="nav-border">About</NavItem>
+      <NavItem to="/contact" activeClassName="nav-border">Contact</NavItem>
+      <NavItem to="/services" activeClassName="nav-border">Towing Services</NavItem>
     </HeadNavContainer>
   );
 };
