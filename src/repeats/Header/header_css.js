@@ -49,6 +49,11 @@ export const NavItem = styled(NavLink).attrs({
     margin: 0 3%;
     padding: 0 0 0.5% 0;
     font-size: 1.3rem;
+    display: block;
+
+    @media (min-width: 850px) {
+        display: inline-block;
+    }
 `;
 
 /******************
