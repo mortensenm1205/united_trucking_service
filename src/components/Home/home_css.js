@@ -4,14 +4,19 @@ export const Home = styled.div`
     max-width: 350px;
     margin: 0 auto;
 
+    @media (min-width: 750px) {
+        max-width: 650px;
+    }
+
     @media (min-width: 1100px) {
-        max-width: 1200px;
+        max-width: 1000px;
     }
 `;
 
 export const HomeImageContainer = styled.figure`
+    margin: 5% 0 0;
     position: relative;
-    padding-top: 56.25%;
+    padding-top: 60%;
     overflow: hidden;
 `;
 

@@ -11,8 +11,12 @@ export const Contact = styled.div`
     max-width: 350px;
     margin: 0 auto;
 
+    @media (min-width: 750px) {
+        max-width: 650px;
+    }
+
     @media (min-width: 1100px) {
-        max-width: 1200px;
+        max-width: 1000px;
     }
 `;
 
