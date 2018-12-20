@@ -46,14 +46,19 @@ export const TypesLink = styled(NavLink).attrs({
         fontStyle: "italic",
     }
 })`
-    display: inline-block;
+    display: block;
     width: 20%;
+    margin: 2% 0;
     vertical-align: top;
     text-decoration: none;
     color: #000;
-    border: 2px solid;
-
+    
     :hover {
         cusor: pointer;
+    }
+    
+    @media (min-width: 850px) {
+        display: inline-block;
+        margin: 0 2%;
     }
 `;
