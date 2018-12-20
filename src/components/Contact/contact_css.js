@@ -8,6 +8,12 @@ import styled from 'styled-components';
 
 export const Contact = styled.div`
     position: relative;
+    max-width: 350px;
+    margin: 0 auto;
+
+    @media (min-width: 850px) {
+        max-width: 1200px;
+    }
 `;
 
 /******************
@@ -40,11 +46,15 @@ export const ContactImg = styled.img.attrs(props => ({
 ******************/
 
 export const Success = styled.div`
-    position: absolute;
-    bottom: 12%;
-    left: 0;
-    width: 40%;
-    font-size: 2rem;
+    font-size: 1.3rem;
+
+    @media (min-width: 850px) {
+        width: 40%;
+        font-size: 2rem;
+        position: absolute;
+        bottom: 12%;
+        left: 0;
+    }
 `;
 
 
@@ -55,8 +65,11 @@ export const Success = styled.div`
 ******************/
 
 export const Form = styled.form`
-    width: 45%;
-    float: left;
+
+    @media (min-width: 850px) {
+        width: 45%;
+        float: left;
+    }
 `;
 
 export const Label = styled.label`
@@ -96,4 +109,5 @@ export const Button = styled.button`
 
 export const Info = styled.div`
     margin: 0 0 5% 0;
+    line-height: 1.6;
 `;
