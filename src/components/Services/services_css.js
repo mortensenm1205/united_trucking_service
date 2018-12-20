@@ -15,7 +15,7 @@ export const ServicesContentWrapper = styled.section`
     
     @media (min-width: 850px) {
         float: left;
-        width: 40%;
+        width: 50%;
         margin: 0 3% 0 0;
         line-height: 1.4;
     }
@@ -44,15 +44,14 @@ export const TypesNavigation = styled.nav`
 export const TypesLink = styled(NavLink).attrs({
     activeStyle: {
         fontStyle: "italic",
-        paddingBottom: "1%",
-        borderBottom: "2px solid #000"
     }
 })`
-    display: block;
-    width: 35%;
-    margin: 1.3% 0;
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
     text-decoration: none;
     color: #000;
+    border: 2px solid;
 
     :hover {
         cusor: pointer;
