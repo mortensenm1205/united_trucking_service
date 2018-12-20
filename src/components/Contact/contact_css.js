@@ -11,7 +11,7 @@ export const Contact = styled.div`
     max-width: 350px;
     margin: 0 auto;
 
-    @media (min-width: 850px) {
+    @media (min-width: 1100px) {
         max-width: 1200px;
     }
 `;
@@ -48,7 +48,7 @@ export const ContactImg = styled.img.attrs(props => ({
 export const Success = styled.div`
     font-size: 1.3rem;
 
-    @media (min-width: 850px) {
+    @media (min-width: 1100px) {
         width: 40%;
         font-size: 2rem;
         position: absolute;
@@ -66,7 +66,7 @@ export const Success = styled.div`
 
 export const Form = styled.form`
 
-    @media (min-width: 850px) {
+    @media (min-width: 1100px) {
         width: 45%;
         float: left;
     }
@@ -101,7 +101,7 @@ export const Button = styled.button`
         color: #fff;
     }
 
-    @media (min-width: 850px) {
+    @media (min-width: 1100px) {
         width: auto;
     }
 

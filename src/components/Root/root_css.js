@@ -20,7 +20,7 @@ export const RootContain = styled.div`
             margin: 5% 0 7%;
         }
 
-        @media (min-width: 850px) {
+        @media (min-width: 1100px) {
             div {
                 min-height: 50vh;
             }

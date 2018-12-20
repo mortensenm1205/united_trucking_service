@@ -4,7 +4,7 @@ export const About = styled.div`
     max-width: 350px;
     margin: 0 auto;
 
-    @media (min-width: 850px) {
+    @media (min-width: 1100px) {
         max-width: 1200px;
     }
 `;
@@ -29,7 +29,7 @@ export const AboutImg = styled.img.attrs(props => ({
 export const AboutCont = styled.div`
     line-height: 1.6;
     
-    @media (min-width: 850px) {
+    @media (min-width: 1100px) {
         width: 40%;
         float: right;
         margin: 0 0 0 3%;

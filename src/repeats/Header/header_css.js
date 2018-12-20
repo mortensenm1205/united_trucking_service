@@ -43,13 +43,13 @@ export const HeadNavContainer = styled.nav`
     .nav-active {
         border: 2px solid #fff;
 
-        @media (min-width: 850px) {
+        @media (min-width: 1100px) {
             border: none;
             border-bottom: 2px solid #fff;
         }
     }
 
-    @media (min-width: 850px) {
+    @media (min-width: 1100px) {
         padding: 1.2% 0;
     }
 `;
@@ -62,7 +62,7 @@ export const NavItem = styled(NavLink)`
     font-size: 1.3rem;
     display: block;
 
-    @media (min-width: 850px) {
+    @media (min-width: 1100px) {
         display: inline-block;
         padding: 0 0 0.5% 0;
         margin: 0 3%;

@@ -5,7 +5,7 @@ export const Services = styled.div`
     max-width: 350px;
     margin: 0 auto;
 
-    @media (min-width: 850px) {
+    @media (min-width: 1100px) {
         max-width: 1200px;
     }
 `;
@@ -13,7 +13,7 @@ export const Services = styled.div`
 export const ServicesContentWrapper = styled.section`
     line-height: 1.6;
     
-    @media (min-width: 850px) {
+    @media (min-width: 1100px) {
         float: left;
         width: 50%;
         margin: 0 3% 0 0;
@@ -46,7 +46,7 @@ export const TypesNavigation = styled.nav`
         background-color: #a11e35;
         color: #fff;
 
-        @media (min-width: 850px) {
+        @media (min-width: 1100px) {
             background-color: #fff;
             color: #a11e35;
         }
@@ -65,7 +65,7 @@ export const TypesLink = styled(NavLink)`
     text-decoration: none;
     box-sizing: border-box;
     
-    @media (min-width: 850px) {
+    @media (min-width: 1100px) {
         display: inline-block;
         width: 20%;
         border: none;
