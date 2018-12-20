@@ -23,7 +23,7 @@ export const HeadImageContainer = styled.figure`
 ******************/
 
 export const HeadInfoContainer = styled.div`
-    min-height: 40vh;
+    text-align: center;
 `;
 
 /******************
@@ -86,9 +86,10 @@ export const HeadImage = styled.img.attrs(props => ({
     height: auto;
 `;
 
-export const HeadInfoImage = styled.img.attrs({
-    alt: "United Truck Service Logo"
-})`
-    background-image: url(${props => props.src});
+export const HeadInfoImage = styled.img.attrs(props => ({
+    alt: "United Truck Service Logo",
+    src: props.src
+}))`
+    background: no-repeat top center;
     width: 35%;
 `; 
