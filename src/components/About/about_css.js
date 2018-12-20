@@ -27,11 +27,12 @@ export const AboutImg = styled.img.attrs(props => ({
 `;
 
 export const AboutCont = styled.div`
- 
+    line-height: 1.6;
+    
     @media (min-width: 850px) {
         width: 40%;
         float: right;
         margin: 0 0 0 3%;
-        line-height: 2;
+        line-height: 2
     }
 `;

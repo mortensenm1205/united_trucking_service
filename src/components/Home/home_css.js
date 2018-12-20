@@ -27,11 +27,11 @@ export const HomeImg = styled.img.attrs(props => ({
 `
 
 export const HomeCont = styled.div`
-
+    line-height: 1.6;
+    
     @media (min-width: 850px) {
         width: 40%;
         float: left;
         margin: 0 3% 0 0;
-        line-height: 1.6;
     }
 `;

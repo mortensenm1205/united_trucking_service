@@ -11,12 +11,13 @@ export const Services = styled.div`
 `;
 
 export const ServicesContentWrapper = styled.section`
+    line-height: 1.6;
     
     @media (min-width: 850px) {
         float: left;
         width: 40%;
-        line-height: 1.4;
         margin: 0 3% 0 0;
+        line-height: 1.4;
     }
 `;
 
