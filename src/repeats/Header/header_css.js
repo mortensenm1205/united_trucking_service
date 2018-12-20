@@ -40,7 +40,7 @@ export const HeadNavContainer = styled.nav`
         Had to remove attrs from NavItem so that 
         we may apply media queries to the acitve style
     */
-    .nav-border {
+    .nav-active {
         border: 2px solid #fff;
 
         @media (min-width: 850px) {
