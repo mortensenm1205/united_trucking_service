@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { About } from './about_css';
 import { downloadImage } from '../../repeats/Image';
 import AboutContent from './Content';
 import AboutImage from './Image';
@@ -19,11 +20,11 @@ class AboutContainer extends Component {
     const { location } = this.props;
     const { aboutImageURL } = this.state;
     return (
-      <div>
+      <About>
         <h1>About Us</h1>
         <AboutContent />
         <AboutImage url={aboutImageURL} location={location} />
-      </div>
+      </About>
     )
   }
 }

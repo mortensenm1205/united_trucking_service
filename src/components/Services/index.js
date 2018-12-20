@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ServicesContentWrapper } from './services_css';
+import { Services, ServicesContentWrapper } from './services_css';
 import { downloadImage } from '../../repeats/Image';
 import ServicesContent from './Content';
 import ServicesImage from './Image';
@@ -27,7 +27,7 @@ class ServicesContainer extends Component {
         const { children, location } = this.props;
         const { servicesImageURL } = this.state;
         return (
-            <div>
+            <Services>
                 <h1>Services</h1>
                 <ServicesContentWrapper>
                     <ServicesContent />
@@ -35,7 +35,7 @@ class ServicesContainer extends Component {
                     {children}
                 </ServicesContentWrapper>
                 <ServicesImage url={servicesImageURL} location={location} />
-            </div>
+            </Services>
         )
     }
 }

@@ -1,6 +1,15 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
+export const Services = styled.div`
+    max-width: 350px;
+    margin: 0 auto;
+
+    @media (min-width: 850px) {
+        max-width: 1200px;
+    }
+`;
+
 export const ServicesContentWrapper = styled.section`
     
     @media (min-width: 850px) {
