@@ -83,9 +83,13 @@ export const Label = styled.label`
 export const Input = styled.input`
     display: block;
     margin: 5% 0;
-    width: 85%;
+    width: 100%;
     border: none;
     border-bottom: 2px solid;
+
+    @media (min-width: 1000px) {
+        width: 85%;
+    }
 `;
 
 export const Button = styled.button`
