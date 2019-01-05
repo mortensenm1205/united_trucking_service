@@ -85,7 +85,16 @@ export const HeadInfo = styled.section`
 export const HeadNavContainer = styled.nav`
     background-color: #a11e35;
     text-align: center;
-
+    position: fixed;
+    top: ${props => (
+        props.position === 0 || props.position < 265 ? 
+            "300px" 
+                : 
+            "0px"
+    )};
+    z-index: 99;
+    width: 100%;
+    
     /* 
         Had to remove attrs from NavItem so that 
         we may apply media queries to the acitve style
