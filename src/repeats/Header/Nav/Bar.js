@@ -1,9 +1,9 @@
 import React from "react";
-import { HeadNavContainer, NavItem } from './header_css';
+import { HeadNavContainer, NavItem } from '../header_css';
 
-const HeaderNav = () => {
+const NavBar = ({ position, scroll }) => {
   return (
-    <HeadNavContainer>
+    <HeadNavContainer position={position} scroll={scroll} >
       {/* Using activeClassName now so that we may use media queries */}
       <NavItem exact={true} to="/" activeClassName="nav-active">Home</NavItem>
       <NavItem to="/about" activeClassName="nav-active">About</NavItem>
@@ -13,4 +13,4 @@ const HeaderNav = () => {
   );
 };
 
-export default HeaderNav;
+export default NavBar;

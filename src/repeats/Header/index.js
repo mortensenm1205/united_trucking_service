@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from './header_css';
 import HeaderInfo from './Info';
-import HeaderNav from "./Nav";
+import HeaderNav from "./Nav/Scroll";
 import HeaderImage from "./Image";
 
 const HeaderContainer = ({ url, location }) => {
