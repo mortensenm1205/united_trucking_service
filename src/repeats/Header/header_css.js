@@ -32,6 +32,10 @@ export const HeadInfoContainer = styled.div`
 
     & > section:nth-child(1) {
 
+        @media (min-width: 1100px) {
+            margin: 0 5% 0 0;
+        }
+
         @media (min-width: 1300px) {
             margin: 0 10% 0 0;
         }
@@ -39,6 +43,10 @@ export const HeadInfoContainer = styled.div`
 
     & > section:nth-child(3) {
         width: 35%; 
+
+        @media (min-width: 1100px) {
+            margin: 0 0 0 3%;
+        }
 
         @media (min-width: 1300px) {
             margin: 0 0 0 6%;
@@ -53,6 +61,8 @@ export const HeadInfo = styled.section`
         font-size: 1.8rem;
         font-weight: 700;
         color: #a11e35;
+        padding: 0;
+        margin: 0;
     } 
 
     @media (min-width: 1100px) {
