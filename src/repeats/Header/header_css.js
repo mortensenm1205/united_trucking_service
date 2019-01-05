@@ -23,15 +23,16 @@ export const HeadImageContainer = styled.figure`
 ******************/
 
 export const HeadInfoContainer = styled.div`
+    // border: 2px solid;
 
     @media (min-width: 1100px) {
-        margin: 0 0 5% 22%;
-        max-width: 60%;
+        margin: 0 0 5% 21%;
+        max-width: 65%;
     }
 
     @media (min-width: 1300px) {
         margin: 0 0 5% 24%;
-        // border: 2px solid;
+        max-width: 60%;
     }
 
     & > section:nth-child(1) {
@@ -46,10 +47,10 @@ export const HeadInfoContainer = styled.div`
     }
 
     & > section:nth-child(3) {
-        width: 35%; 
-
+        
         @media (min-width: 1100px) {
             margin: 0 0 0 3%;
+            width: 35%; 
         }
 
         @media (min-width: 1300px) {
@@ -60,13 +61,13 @@ export const HeadInfoContainer = styled.div`
 `;
 
 export const HeadInfo = styled.section`
-    text-align: center;
 
     & > p {
+        text-align: center;
         font-size: 1.8rem;
         font-weight: 700;
         color: #a11e35;
-        padding: 5% 0;
+        padding: 2.5% 0;
         margin: 0;
     } 
 
