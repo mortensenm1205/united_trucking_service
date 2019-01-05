@@ -25,15 +25,19 @@ export const HeadImageContainer = styled.figure`
 export const HeadInfoContainer = styled.div`
 
     @media (min-width: 1100px) {
+        margin: 0 0 0 22%
+        max-width: 60%;
+    }
+
+    @media (min-width: 1300px) {
         margin: 0 0 0 24%;
         // border: 2px solid;
-        max-width: 60%;
     }
 
     & > section:nth-child(1) {
 
         @media (min-width: 1100px) {
-            margin: 0 5% 0 0;
+            margin: 0 6% 0 0;
         }
 
         @media (min-width: 1300px) {
