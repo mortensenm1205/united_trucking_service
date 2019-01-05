@@ -31,12 +31,18 @@ export const HeadInfoContainer = styled.div`
     }
 
     & > section:nth-child(1) {
-        margin: 0 10% 0 0;
+
+        @media (min-width: 1300px) {
+            margin: 0 10% 0 0;
+        }
     }
 
     & > section:nth-child(3) {
-        margin: 0 0 0 6%;
         width: 35%; 
+
+        @media (min-width: 1300px) {
+            margin: 0 0 0 6%;
+        }
     }
 `;
 
