@@ -23,7 +23,35 @@ export const HeadImageContainer = styled.figure`
 ******************/
 
 export const HeadInfoContainer = styled.div`
+
+    @media (min-width: 1100px) {
+        margin: 0 0 0 24%;
+        // border: 2px solid;
+        max-width: 60%;
+    }
+
+    & > section:nth-child(1) {
+        margin: 0 10% 0 0;
+    }
+
+    & > section:nth-child(3) {
+        margin: 0 0 0 6%;
+        width: 35%; 
+    }
+`;
+
+export const HeadInfo = styled.section`
     text-align: center;
+
+    & > p {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #a11e35;
+    } 
+
+    @media (min-width: 1100px) {
+        display: inline-block;
+    }
 `;
 
 /******************
@@ -92,4 +120,8 @@ export const HeadInfoImage = styled.img.attrs(props => ({
 }))`
     background: no-repeat top center;
     width: 35%;
+
+    @media (min-width: 1100px) {
+        width: 32%;
+    }
 `; 
