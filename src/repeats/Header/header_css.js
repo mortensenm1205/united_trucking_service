@@ -26,8 +26,8 @@ export const HeadInfoContainer = styled.div`
     // border: 2px solid;
 
     @media (min-width: 1100px) {
-        margin: 0 0 5% 21%;
-        max-width: 65%;
+        margin: 0 0 5% 18%;
+        max-width: 71%;
     }
 
     @media (min-width: 1300px) {
@@ -38,7 +38,7 @@ export const HeadInfoContainer = styled.div`
     & > section:nth-child(1) {
 
         @media (min-width: 1100px) {
-            margin: 0 6% 0 0;
+            margin: 0 8% 0 0;
         }
 
         @media (min-width: 1300px) {
@@ -49,7 +49,7 @@ export const HeadInfoContainer = styled.div`
     & > section:nth-child(3) {
         
         @media (min-width: 1100px) {
-            margin: 0 0 0 3%;
+            margin: 0 0 0 5%;
             width: 35%; 
         }
 
@@ -85,9 +85,14 @@ export const HeadInfo = styled.section`
 export const HeadNavContainer = styled.nav`
     background-color: #a11e35;
     text-align: center;
-    position: fixed;
+    position: ${props => (
+        (props.position === 0 || props.position < 300) ?
+            undefined
+            :
+            "fixed"
+    )};
     top: ${props => (
-        props.position === 0 || props.position < 265 ? 
+        (props.position === 0 || props.position < 300) ? 
             "300px" 
                 : 
             "0px"
