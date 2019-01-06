@@ -24,6 +24,7 @@ export const HeadImageContainer = styled.figure`
 
 export const HeadInfoContainer = styled.div`
     // border: 2px solid;
+    text-align: center;
 
     @media (min-width: 1100px) {
         margin: 0 0 5% 18%;
@@ -155,7 +156,12 @@ export const HeadInfoImage = styled.img.attrs(props => ({
     src: props.src
 }))`
     background: no-repeat top center;
-    width: 35%;
+    width: 75%;
+    margin: 0 auto; 
+
+    @media (min-width: 750px) {
+        width: 65%
+    }
 
     @media (min-width: 1100px) {
         width: 32%;

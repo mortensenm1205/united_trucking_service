@@ -11,7 +11,7 @@ export const RootContain = styled.div`
     margin: 0 auto;
     
     & > div {
-        min-height: 145vh;
+        min-height: 155vh;
     }
 
     h1 {
