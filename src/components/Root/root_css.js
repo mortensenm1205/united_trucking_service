@@ -37,4 +37,10 @@ export const RootContain = styled.div`
             margin: 5% 0;
         }
     }
+
+    @media (min-width: 1300px) {
+        & > div {
+            min-height: 130vh;
+        }
+    }
 `;
