@@ -13,7 +13,7 @@ const HomeContent = props => {
                 <li>RV Towing</li>
                 <li>Wrecker Service</li>
             </ul>
-            <p>Getting you back on the road safely and quickly is United Truck Service’s priority. United Truck Service has a team of experienced certified professionals that are ready to recover your vehicle and deliver it safely to your destination. Contact them at (908) 224-0060. Reliability and customer satisfaction are important to United Truck Service. The company takes pride in providing you a valuable towing service in Central New Jersey. And as always, first time customers receive 10% off. If you or someone you know is looking for a professional, reliable, towing company, United Truck Service has you covered. Contact United Truck Service at (908) 224-0060. </p>
+            <p>Getting you back on the road safely and quickly is United Truck Service’s priority. United Truck Service has a team of experienced certified professionals that are ready to recover your vehicle and deliver it safely to your destination. Contact them at (908)-361-0376. Reliability and customer satisfaction are important to United Truck Service. The company takes pride in providing you a valuable towing service in Central New Jersey. And as always, first time customers receive 10% off. If you or someone you know is looking for a professional, reliable, towing company, United Truck Service has you covered. Contact United Truck Service at (908)-361-0376. </p>
         </HomeCont>
     )
 }

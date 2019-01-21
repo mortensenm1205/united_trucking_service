@@ -11,7 +11,7 @@ const RoadsideAssistance = props => {
                 <li>Gas Delivery</li>
                 <li>Lockout Service</li>
             </ul>
-            <p>Contact United Truck Service at (908) 224-0060.</p>
+            <p>Contact United Truck Service at (908)-361-0376.</p>
         </div>
     )
 }

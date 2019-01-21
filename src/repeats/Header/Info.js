@@ -11,7 +11,7 @@ const HeaderInfo = () => {
             <HeadInfoImage src="https://firebasestorage.googleapis.com/v0/b/united-trucking-company.appspot.com/o/uts_logo.png?alt=media&token=dcaee300-b331-46df-a867-d0bad99b94ef"  />
             <HeadInfo>
                 <p>Have Questions?</p>
-                <p>Email us at: unitedtruck@gmail.com</p>
+                <p>Email us at: unitedtruck@yahoo.com</p>
             </HeadInfo>
         </HeadInfoContainer>
     );
